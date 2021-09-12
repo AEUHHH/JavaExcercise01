@@ -8,18 +8,22 @@ import java.util.Scanner;
  */
 
 
-public class App
+public class App{
 
-{
-    public static void main( String[] args )
+    public static void main(String[] args)
     {
-        System.out.println( "Hello World!" );
-        Scanner read = new Scanner(System.in);
-        String str = read.next();
+
+        Scanner std_in = new Scanner( System.in );
+
+        String UserName; // user's name,entered by the user.
+
+
+        System.out.print("What is your name? ");
+        UserName = std_in.nextLine();
+
+
+        System.out.println("Hello, " + UserName + ", nice to meet you!");
+
     }
-
-
-
-
 
 }
